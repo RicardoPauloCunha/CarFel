@@ -64,6 +64,9 @@ header{
 	text-align: right;
 	margin: auto;
 }
+.menu a{
+	transition: 1s;
+}
 /*fim menu*/
 /*banner*/
 .banner{
@@ -150,6 +153,7 @@ button{
 	border-radius: 3em;
 	text-align: center;
 	text-transform: uppercase;
+	transition: 0.3s;
 }
 .empresa-resumo{
 	text-align: center;
@@ -329,24 +333,6 @@ footer img{
     left: -1.8em;
     top: 3.5em;
 }
-
-/* .time-circulo{
-	width: 1.5em;
-	height: 1.5em;
-	background-color: rgb(65, 162, 242);
-	border: solid 0.1em rgb(0, 0, 0, 0.2);
-	border-radius: 2em;
-	position: relative;
-	left: 5em;
-    top: -0.9em;
-    margin: 3em 0 0 0;
-    z-index: 2;
-}
-.time-circulo-ajust{
-	top: -15px;
-	left: -75px;
-} */
-
 /* fim timeline */
 /* fim main */
 /* fim css pagina empresa */
@@ -437,28 +423,51 @@ footer img{
 }
 .contato-textarea{
 	height: 10em;
-	max-width: 100%;
-	min-width: 100%;
+	resize: none;
 	min-height: 10em;
 	max-height: 15em;
 }
 .mapa-img{
 	width: 80%;
-	height: 25em;
+	height: auto;
 	margin: 5em auto 5em auto;
-	background-size: cover;
-	background-image: url("../imagem/mapa.png")
-}
-.mapa-img-point{
-	position: relative;
-	top: 57px;
-    left: 426px;
-	z-index: 1;
+	text-align: center;
 }
 .contato .botao-contato{
 	text-align: right;
 }
 /* fim css pagina contato */
+/* animaçoes/efeitos */
+	button:hover{
+		background-color: rgb(0, 0, 255);
+		box-shadow: 0.3em 0.3em 0.2em rgb(51, 51, 51, 0.5);
+	}
+	button:active{
+		background-color: rgb(98, 98, 255);
+		box-shadow: 0.1em 0.1em 0.1em rgb(51, 51, 51, 0.5); 
+		outline: none;
+	}
+	.menu a:hover{
+		text-decoration-color: #e5e5e5;
+		text-decoration-line: underline;
+	}
+	.banner a:hover{
+		text-decoration-color: #e5e5e5;
+		text-decoration-line: underline;
+	}
+	.timeline:hover{
+		background-color: rgb(65, 162, 242, 0.3);
+		border: solid 0.1em rgb(0, 0, 0, 0.7)
+	}
+	.preços-plano-item:hover{
+		box-shadow: 0.3em 0.3em 0.2em rgb(51, 51, 51, 0.5);
+		background-color: rgba(100, 190, 255, 0.3);
+	}
+	input:focus{
+		background-color: rgba(100, 190, 255, 0.2);
+		outline: none;
+	}
+/* fim animaçoes/efeitos */
 /*BreakPoints*/
 @media screen and (max-width:1366px){
 	h1{
@@ -485,16 +494,6 @@ footer img{
 	.titulo{
 		padding: 2% 0 0 0;
 	}
-	/* .time-circulo{
-		width: 1.5em;
-		height: 1.5em;
-		left: 5em;
-	    top: -0.9em;
-	}
-	.time-circulo-ajust{
-		top: -1em;
-		left: -5em;
-	} */
 	.time-quadrado{
 	    left: 2em;
 	}
@@ -503,6 +502,10 @@ footer img{
 	}
 	.linha-vertical{
 		height: 53em;
+	}
+	.mapa-img iframe{
+		width: 100%; 
+		height: 27em;
 	}
 }
 @media screen and (max-width: 1120px){
@@ -537,16 +540,6 @@ footer img{
 		width: 0.5em;
 		height: 55em;
 	}
-	/* .time-circulo{
-		width: 1.5em;
-		height: 1.5em;
-		left: 4.5em;
-	    top: -0.9em;
-	}
-	.time-circulo-ajust{
-		top: -1em;
-		left: -4.5em;
-	} */
 	.time-quadrado{
 	    left: 1.8em;
 	}
@@ -619,16 +612,6 @@ footer img{
 	.historico p{
 		font-size: 0.9em;
 	}
-	/* .time-circulo {
-	    width: 1.3em;
-	    height: 1.3em;
-	    top: -5.4em;
-	    left: -0.4em;
-	    margin: 0 0 0.8em 0;
-	}
-	.time-circulo-ajust{
-		top: -6em;
-	} */
 	.time-quadrado{
 		width: 1.3em;
 		height: 1.23em;
@@ -663,13 +646,11 @@ footer img{
 	.contato-item h1{
 		font-size: 1.6em;
 	}
-	.mapa-img{
-		height: 17em;
-		margin: 4em auto 1em auto;
+	.mapa-img iframe{ 
+		height: 24em;
 	}
-	.mapa-img-point{
-	    top: 26px;
-    	left: 287px;
+	.mapa-img{
+		margin: 4em auto 1em auto;
 	}
 	button{
 		padding: 0.5em;
@@ -764,16 +745,6 @@ footer img{
 		width: 0.4em;
 		height: 4em;
 	}
-	/* .time-circulo {
-	    width: 1em;
-	    height: 1em;
-	    top: -5.4em;
-	    left: -0.27em;
-	    margin: 0 0 0.8em 0;
-	}
-	.time-circulo-ajust{
-		top: -6em;
-	} */
 	.time-quadrado{
 		width: 1.1em;
 		height: 1.1em;
@@ -822,13 +793,11 @@ footer img{
 	.contato-item h1{
 		font-size: 1.4em;
 	}
-	.mapa-img{
-		height: 15em;
-		margin: 3em auto 0em auto;
+	.mapa-img iframe{ 
+		height: 20em;
 	}
-	.mapa-img-point{
-	    top: 20px;
-    	left: 250px;
+	.mapa-img{
+		margin: 3em auto 0em auto;
 	}
 	button{
 		padding: 0.4em;
@@ -1009,13 +978,11 @@ footer img{
 		width: 90%;
 		text-align: center;
 	}
-	.mapa-img{
-		margin: 2em auto 0 auto;
-		height: 12em;
+	.mapa-img iframe{ 
+		height: auto;
 	}
-	.mapa-img-point{
-	    top: 10px;
-    	left: 198px;
+	.mapa-img{
+		margin: 2em auto 0.5em auto;
 	}
 	.chat-header{
 		width: 17em;
@@ -1051,6 +1018,14 @@ footer img{
 	a{
 		font-size: 0.6em;
 	}
+	/* menu */
+	.menu a{
+		margin: 0 2.6em 0 0;
+	}
+	.logo{
+		visibility: hidden;
+	}
+	/* fim menu */
 	button{
 		padding: 0.1em 0.1em 0.4em 0.1em
 	}
@@ -1106,18 +1081,10 @@ footer img{
     width: 45%;
 	}
 	.mapa-img{
-		height: 7em;
-	}
-	.mapa-img-point img{
-		width: 1em;
-		height: auto;
-	}
-	.mapa-img-point{
-		height: auto;
-	    top: 11px;
-    	left: 130px;
+		margin: 2em auto 0.5em auto;
 	}
 	.titulo{
 		padding: 3% 0 0 0;
 	}
 }
+/* fim BreakPoints */
