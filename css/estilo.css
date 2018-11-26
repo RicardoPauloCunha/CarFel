@@ -62,16 +62,21 @@ header{
 	width: 40px;
 	height: 45px;
 }
-.menu{
+.menu-links-login {
 	width: 100%;
+	margin: auto;
+	justify-content: space-between;
+}
+.menu{
+	width: auto;
 	height: 100%;
 	text-transform: uppercase;
-	font-size: 1.5em;
-	text-align: right;
-	margin: auto;
+	font-size: 1.2em;
+	margin: auto 1em auto;
 }
-.menu a{
-	transition: 1s;
+.menu-login{
+	text-align: right;
+	justify-items: flex-end;
 }
 /*fim menu*/
 /*banner*/
@@ -321,18 +326,18 @@ footer img{
 	border: solid 0.1em white;
 }
 .time-quadrado{
-	width: 1.5em;
-    height: 1.45em;
+	width: 23px;
+    height: 23px;
     background-color: rgb(65, 162, 242);
     border: solid 0.1em rgb(0, 0, 0, 0.5);
     transform: rotatez(45deg);
     position: relative;
-    left: 2.3em;
+    left: 2.8em;
     top: 3.5em;
 }
 .time-quadrado-left{
-	width: 1.5em;
-    height: 1.45em;
+	width: 23px;
+    height: 23px;
     background-color: rgb(65, 162, 242);
     border: solid 0.1em rgb(0, 0, 0, 0.5);
     transform: rotatez(45deg);
@@ -457,8 +462,7 @@ footer img{
 		outline: none;
 	}
 	.menu a:hover{
-		text-decoration-color: #e5e5e5;
-		text-decoration-line: underline;
+		border-bottom: solid #e5e5e5 0.1em;
 	}
 	.banner a:hover{
 		text-decoration-color: #e5e5e5;
@@ -492,7 +496,7 @@ footer img{
 		font-size: 1.1em;
 	}
 	a{
-		font-size: 1.1em;
+		font-size: 0.85em;
 	}
 	.banner{
 		height: 354px;
@@ -504,7 +508,7 @@ footer img{
 		padding: 2% 0 0 0;
 	}
 	.time-quadrado{
-	    left: 2em;
+	    left: 1.8em;
 	}
 	.time-quadrado-left{
 	    left: -1.8em;
@@ -518,9 +522,6 @@ footer img{
 	}
 }
 @media screen and (max-width: 1120px){
-	.menu{
-		font-size: 1.35em;
-	}
 	.banner{
 		height: 289px;
 	}
@@ -549,9 +550,6 @@ footer img{
 		width: 0.5em;
 		height: 55em;
 	}
-	.time-quadrado{
-	    left: 1.8em;
-	}
 	.linha-vertical{
 		height: 53em;
 	}
@@ -571,7 +569,7 @@ footer img{
 		font-size: 1em;
 	}
 	a{
-		font-size: 1em;
+		font-size: 0.7em;
 	}
 	.espacamento{
 		margin-bottom: 6em;
@@ -581,7 +579,7 @@ footer img{
 		height: auto;
 	}
 	.menu{
-		font-size: 1.2em
+		font-size: 1em
 	}
 	.banner{
 		height: 236px;
@@ -601,7 +599,11 @@ footer img{
 		top: -8em;
 	}
 	.vantagens img {
+		width: 30%;
 		margin: auto 2em auto 2em;
+	}
+	.v-i-a img{
+		width: 25%;
 	}
 	.empresa-resumo{
 		margin: 3em auto 1em auto;
@@ -625,13 +627,9 @@ footer img{
 		font-size: 0.9em;
 	}
 	.time-quadrado{
-		width: 1.3em;
-		height: 1.23em;
 		left: 1.7em;
 	}
 	.time-quadrado-left{
-		width: 1.3em;
-		height: 1.23em;
 		left: -1.7em;
 	}
 	.linha-vertical{
@@ -687,7 +685,7 @@ footer img{
 		font-size: 1em;
 	}
 	a{
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 	.espacamento{
 		margin-bottom: 5em;
@@ -724,13 +722,13 @@ footer img{
 		top: -7em;
 	}
 	.vantagens-item img{
-		max-width: 30%;
-    	height: 7.5em;
+		max-width: 28%;
+    	height: 6em;
     	margin: auto 2em auto 2em;
 	}
 	.v-i-a img{
-		max-width: 30%;
-		height: 8.5em;
+		max-width: 24%;
+		height: 6.5em;
 	}
 	.empresa-resumo{
 		margin: 2em auto 1em auto;
@@ -761,16 +759,6 @@ footer img{
 	.linha-vertical {
 		width: 0.4em;
 		height: 4em;
-	}
-	.time-quadrado{
-		width: 1.1em;
-		height: 1.1em;
-		left: 1.6em;
-	}
-	.time-quadrado-left{
-		width: 1.1em;
-		height: 1.1em;
-		left: -1.6em;
 	}
 	.linha-vertical{
 		height: 45em;
@@ -860,14 +848,10 @@ footer img{
 	.time-quadrado{
 		top: 1em;
 		left: 1.4em;
-		width: 0.8em;
-		height: 0.8em;
 	}
 	.time-quadrado-left{
 		top: 1em;
 		left: -1.4em;
-		width: 0.8em;
-		height: 0.8em;
 	}
 	.linha-vertical{
 		height: 50em;;
@@ -876,7 +860,7 @@ footer img{
 		flex-wrap: wrap;
 	}
 	a {
-		font-size: 0.7em;
+		font-size: 0.65em;
 	}
 	footer ul {
 		width: 40%;
@@ -942,12 +926,12 @@ footer img{
 	}
 	.vantagens-item img{
 		max-width: 25%;
-    	height: 5em;
+    	height: 4.5em;
     	margin: 1.5em;
 	}
 	.v-i-a img{
-		max-width: 25%;
-		height: 6em;
+		max-width: 22%;
+		height: 5em;
 		margin: 1.5em;
 	}
 	footer img {
@@ -988,20 +972,19 @@ footer img{
 		margin: 0 auto 2.5em auto;
 	}
 	/* timeline */
+	.timeline {
+		padding: 0.5em;
+	}
 	.historico p{
 		font-size: 0.5em;
 	}
 	.time-quadrado{
 		top: 1em;
-		left: 1.4em;
-		width: 1.1em;
-		height: 0.7em;
+		left: 0.9em;
 	}
 	.time-quadrado-left{
 		top: 1em;
-		left: -1.4em;
-		width: 1.15em;
-		height: 0.7em;
+		left: -0.9em;
 	}
 	.linha-vertical{
 		height: 40em;;
