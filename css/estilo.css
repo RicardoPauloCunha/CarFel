@@ -43,6 +43,9 @@ body{
 	font-size: 16px;
 	color: #666666;
 }
+.espacamento {
+	margin-bottom: 7em;
+}
 /*menu*/
 header{
 	background-color: #4D4DFF;
@@ -87,14 +90,14 @@ header{
     height: 398px;
     top: 58px;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.58);
     z-index: 1;
 }
-.banner-item{
-	margin: auto 0 auto 0;
-	z-index: 2;
-	color: #e5e5e5;
-	font-size: 1.5em;
+.banner-item {
+    margin: auto 0 auto 3em;
+    z-index: 2;
+    color: #e5e5e5;
+    font-size: 1.5em;
 }
 .banner h2{
 	margin-bottom: 0;
@@ -136,6 +139,7 @@ main{
 }
 .vantagens{
 	text-align: center;
+	margin-bottom: 7em
 }
 .vantagens-item{
 	justify-content: center;
@@ -197,7 +201,7 @@ footer img{
 	width: auto;
 	height: auto;
 	padding: 0.7em 1.5em 0.5em 0.5em;
-	background-color: green;
+	background-color: #4D4DFF;
 	color: #e5e5e5;
 	border-radius: 0 3em 0 0.2em;
 	font-size: 1em;
@@ -230,7 +234,7 @@ footer img{
 /* main */
 .empresaCF{
 	text-align: center;
-	margin: 0 0 5em 0;
+	margin: 0 0 7em 0;
 }
 .empresa-item img{
 	width: 100%;
@@ -376,7 +380,6 @@ footer img{
 	margin: 2em auto 2em auto;
 }
 .perguntas h2{
-	margin: 3em 0 0 0;
 	text-align: center;
 }
 /* fim main */
@@ -570,6 +573,9 @@ footer img{
 	a{
 		font-size: 1em;
 	}
+	.espacamento{
+		margin-bottom: 6em;
+	}
 	.logo img{
 		width: 30px;
 		height: auto;
@@ -682,6 +688,9 @@ footer img{
 	}
 	a{
 		font-size: 0.8em;
+	}
+	.espacamento{
+		margin-bottom: 5em;
 	}
 	.logo img{
 		width: 30px;
@@ -824,6 +833,9 @@ footer img{
 	}
 }
 @media screen and (max-width: 650px){
+	.espacamento{
+		margin-bottom: 3.5em;
+	}
 	.flex-container-p{
 		flex-wrap: wrap;
 	}
@@ -838,6 +850,36 @@ footer img{
 	}
 	.preços-vantagens-item{
 		width: 90%;
+		margin: auto;
+	}
+}
+@media screen and (max-width:580px){
+	.historico p{
+		font-size: 0.65em;
+	}
+	.time-quadrado{
+		top: 1em;
+		left: 1.4em;
+		width: 0.8em;
+		height: 0.8em;
+	}
+	.time-quadrado-left{
+		top: 1em;
+		left: -1.4em;
+		width: 0.8em;
+		height: 0.8em;
+	}
+	.linha-vertical{
+		height: 50em;;
+	}
+	footer {
+		flex-wrap: wrap;
+	}
+	a {
+		font-size: 0.7em;
+	}
+	footer ul {
+		width: 40%;
 		margin: auto;
 	}
 }
@@ -856,6 +898,9 @@ footer img{
 	}
 	a{
 		font-size: 0.6em;
+	}
+	.espacamento{
+		margin-bottom: 4em;
 	}
 	button{
 		margin: 1em;
@@ -948,16 +993,18 @@ footer img{
 	}
 	.time-quadrado{
 		top: 1em;
+		left: 1.4em;
 		width: 1.1em;
-		height: 1em;
+		height: 0.7em;
 	}
 	.time-quadrado-left{
 		top: 1em;
+		left: -1.4em;
 		width: 1.15em;
-		height: 1em;
+		height: 0.7em;
 	}
 	.linha-vertical{
-		height: 35em;;
+		height: 40em;;
 	}
 	/* fim timeline */
 	.preços h1{
@@ -1033,6 +1080,9 @@ footer img{
 	}
 	a{
 		font-size: 0.6em;
+	}
+	.espacamento{
+		margin-bottom: 2.5em;
 	}
 	/* menu */
 	.menu a{
@@ -1116,6 +1166,9 @@ footer img{
 }
 /* fim BreakPoints */
 @media screen and (max-width:320px){
+	.espacamento{
+		margin-bottom: 2em;
+	}
 	.banner{
 		height: 80px;
 		text-align: center;
