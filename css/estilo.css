@@ -433,7 +433,7 @@ footer img{
 	margin: 1.5em 0 0 0;
 	padding: 0.2em 0 0 0.5em;
 	border-radius: 2em;
-	border: solid rgb(65, 162, 242, 0.5);
+	border: solid rgb(65, 162, 242, 0.5) 0.15em;
 }
 .contato-textarea{
 	height: 10em;
