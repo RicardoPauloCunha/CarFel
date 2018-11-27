@@ -945,15 +945,18 @@ footer img{
 	.barra{
 		height: 0.7em;
 	}
+	.vantagens-item{
+		flex-wrap: wrap;
+	}
 	.vantagens-item img{
 		max-width: 25%;
     	height: 4.5em;
-    	margin: 1.5em;
+    	margin: 1em;
 	}
 	.v-i-a img{
 		max-width: 22%;
 		height: 5em;
-		margin: 1.5em;
+		margin: 1em;
 	}
 	footer img {
 		width: 3em;
@@ -1129,11 +1132,11 @@ footer img{
 	}
 	.vantagens-item img{
     	height: 4em;
-    	margin: 1em;
+    	margin: 0.7em;
 	}
 	.v-i-a img{
 		height: 5.5em;
-		margin: 1em;
+		margin: 0.7em;
 	}
 	.historico p{
 		font-size: 0.5em;
