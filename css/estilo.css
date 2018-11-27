@@ -326,18 +326,18 @@ footer img{
 	border: solid 0.1em white;
 }
 .time-quadrado{
-	width: 23px;
-    height: 23px;
+	width: 1.5em;
+    height: 1.45em;
     background-color: rgb(65, 162, 242);
     border: solid 0.1em rgb(0, 0, 0, 0.5);
     transform: rotatez(45deg);
     position: relative;
-    left: 2.8em;
+    left: 2.3em;
     top: 3.5em;
 }
 .time-quadrado-left{
-	width: 23px;
-    height: 23px;
+	width: 1.5em;
+    height: 1.45em;
     background-color: rgb(65, 162, 242);
     border: solid 0.1em rgb(0, 0, 0, 0.5);
     transform: rotatez(45deg);
@@ -508,7 +508,7 @@ footer img{
 		padding: 2% 0 0 0;
 	}
 	.time-quadrado{
-	    left: 1.8em;
+	    left: 2em;
 	}
 	.time-quadrado-left{
 	    left: -1.8em;
@@ -549,6 +549,9 @@ footer img{
 	.linha-vertical{
 		width: 0.5em;
 		height: 55em;
+	}
+	.time-quadrado{
+	    left: 1.8em;
 	}
 	.linha-vertical{
 		height: 53em;
@@ -627,9 +630,13 @@ footer img{
 		font-size: 0.9em;
 	}
 	.time-quadrado{
+		width: 1.3em;
+		height: 1.23em;
 		left: 1.7em;
 	}
 	.time-quadrado-left{
+		width: 1.3em;
+		height: 1.23em;
 		left: -1.7em;
 	}
 	.linha-vertical{
@@ -763,6 +770,16 @@ footer img{
 	.linha-vertical{
 		height: 45em;
 	}
+	.time-quadrado{
+		width: 1.1em;
+		height: 1.1em;
+		left: 1.6em;
+	}
+	.time-quadrado-left{
+		width: 1.1em;
+		height: 1.1em;
+		left: -1.6em;
+	}
 	.timeline-ajust-margin-top {
     	margin: 6em 0 0 0;
 	}
@@ -848,10 +865,14 @@ footer img{
 	.time-quadrado{
 		top: 1em;
 		left: 1.4em;
+		width: 0.8em;
+		height: 0.8em;
 	}
 	.time-quadrado-left{
 		top: 1em;
 		left: -1.4em;
+		width: 0.8em;
+		height: 0.8em;
 	}
 	.linha-vertical{
 		height: 50em;;
@@ -980,11 +1001,15 @@ footer img{
 	}
 	.time-quadrado{
 		top: 1em;
-		left: 0.9em;
+		left: 1.4em;
+		width: 1.1em;
+		height: 0.7em;
 	}
 	.time-quadrado-left{
 		top: 1em;
-		left: -0.9em;
+		left: -1.4em;
+		width: 1.15em;
+		height: 0.7em;
 	}
 	.linha-vertical{
 		height: 40em;;
