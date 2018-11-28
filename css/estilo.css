@@ -160,7 +160,7 @@ button{
 	border: none;
 	background-color: #4D4DFF;
 	color: #e5e5e5;
-	padding: 0.7em 0.7em 0.7em 0.7em; 
+	padding: 0.5em; 
 	margin: 1.5em auto 1.5em auto;
 	border-radius: 3em;
 	text-align: center;
@@ -217,6 +217,43 @@ footer img{
 	right: 25px;
 }
 /*fim chat*/
+/* depoimentos */
+.depoimentos{
+	margin: 7em auto 1em auto;
+	text-align: center;
+}
+.depoimentos p{
+	text-align: justify;
+	margin: auto 0;
+}
+.dep-img{
+	width: 12%;
+	margin-right: 0.5em;
+}
+.dh-like{
+	width: 5em;
+	height: 2.5em;
+	margin: auto 0 auto 0;
+}
+.dep-header{
+	justify-content: space-between;
+}
+.dep-main{
+	margin-top: 1em;
+}
+.dep-barra {
+	width: 100%;
+	height: 0.2em;
+	background-color: rgb(65, 162, 242, 0.3);
+	margin: 0.5em 0 2em 0;
+}
+.dep-footer{
+	justify-content: flex-end;
+}
+.dep-footer button{
+	margin: 1em auto 0.5em auto;
+}
+/* fim depoimentos */
 /* fim css pagina Home */
 /* barra titulo */
 .titulo{
@@ -461,6 +498,9 @@ footer img{
 		box-shadow: 0.1em 0.1em 0.1em rgb(51, 51, 51, 0.5); 
 		outline: none;
 	}
+	button:focus {
+		outline: none;
+	}
 	.menu a:hover{
 		border-bottom: solid #e5e5e5 0.1em;
 	}
@@ -521,7 +561,7 @@ footer img{
 		height: 27em;
 	}
 }
-@media screen and (max-width: 1120px){
+@media screen and (max-width:1120px){
 	.banner{
 		height: 289px;
 	}
@@ -677,7 +717,6 @@ footer img{
 		font-size: 0.8em;
 	}
 }
-
 @media screen and (max-width:768px){
 	h1{
 		font-size: 1.6em;
@@ -837,7 +876,7 @@ footer img{
 		font-size: 0.7em;
 	}
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width:650px){
 	.espacamento{
 		margin-bottom: 3.5em;
 	}
@@ -1175,7 +1214,6 @@ footer img{
 		margin: 1em auto 0.5em auto;
 	}
 }
-/* fim BreakPoints */
 @media screen and (max-width:320px){
 	.espacamento{
 		margin-bottom: 2em;
@@ -1233,3 +1271,4 @@ footer img{
 		width: 100%;
 	}
 }
+/* fim BreakPoints */

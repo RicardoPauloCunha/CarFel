@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <title>CarFel - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/conta.css">
-    <title>CarFel - Login</title>
 </head>
 <body>
     <div class="box">
@@ -22,14 +23,21 @@
                 </div>
                 <div class="form-main">
                     <form class="formulario flex-container">
-                        <p>Email:</p>
-                        <input type="text" name="email" required class="form-input">
+                        <label>
+                            <p>Email:</p>
+                            <input type="text" name="email" required class="form-input">
+                        </label>
                         
-                        <p>Senha:</p>
-                        <input type="text" name="senha" required class="form-input">
+                        <label>
+                            <p>Senha:</p>
+                            <input type="text" name="senha" required class="form-input">
+                        </label>
                       
                         <input type="submit" name="enviar" value="Entrar" class="form-button">
                     </form>
+                    <div class="sair">
+                        <a href="index.html">Sair</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +45,7 @@
         <div class="container-lr">
                 <div class="lr-item">
                         <p>Não possui uma conta?</p>
-                        <input type="submit" name="enviar" value="Cadastre-se" class="form-button">
+                        <button class="form-button bt-login"><a href="cadastro.html">Cadastre-se</a></button>
                 </div>
         </div>
     </div>

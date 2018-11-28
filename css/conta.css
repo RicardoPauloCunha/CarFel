@@ -19,6 +19,12 @@ h1 {
 p {
     font-size: 1.1em;
 }
+
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
 .flex-container {
     display: flex;
 }
@@ -27,7 +33,7 @@ p {
 .container-lr {
     width: 27%;
     height: 15em;
-    background-color: rgb(211, 211, 211);
+    background-color: #e1e1e5;
     margin: auto 0;
     text-align: center;
 }
@@ -39,13 +45,13 @@ p {
     height: 22.5em;
     padding: 2em 0 0 0;
 }
-.casleft{
+.casleft {
     width: 5%;
     height: 22.5em;
 }
-.lr-item{
+.lr-item {
     width: 80%;
-    margin: 7em auto;
+    margin: 6em auto;
 }
 
 /* fim box esquerdo e direito */
@@ -53,7 +59,7 @@ p {
     display: flex;
     width: 50%;
     height: auto;
-    margin:  6em auto;
+    margin: 7em auto;
 }
 
 /* main */
@@ -92,7 +98,7 @@ p {
 .formulario {
     flex-direction: column;
 }
-.form-button{
+.form-button {
 	border: none;
 	background-color: #4D4DFF;
 	color: #e5e5e5;
@@ -103,7 +109,7 @@ p {
 	text-transform: uppercase;
 	transition: 0.3s;
 }
-.form-input{
+.form-input {
 	background-color: rgba(80, 169, 241, 0.3);
 	width: 100%;
 	height: 2.5em;
@@ -111,6 +117,13 @@ p {
 	padding: 0.2em 0 0 0.5em;
 	border-radius: 2em;
 	border: solid rgb(65, 162, 242, 0.5) 0.15em;
+}
+.sair {
+    width: auto;
+    text-align: right;
+}
+.sair a{
+    color: #666666;
 }
 
 /* img admin e user */
@@ -131,17 +144,80 @@ p {
 /* fim main */
 
 /* animaçoes/efeitos */
-.form-button:hover{
+.form-button:hover {
     background-color: rgb(0, 0, 255);
     box-shadow: 0.3em 0.3em 0.2em rgb(51, 51, 51, 0.5);
 }
-.form-button:active{
+.form-button:active {
     background-color: rgb(98, 98, 255);
     box-shadow: 0.1em 0.1em 0.1em rgb(51, 51, 51, 0.5); 
     outline: none;
 }
-input:focus{
-    background-color: rgba(100, 190, 255, 0.2);
+input:focus {
+    background-color: rgba(56, 168, 248,0.2);
+    outline: none;
+}
+button:focus {
     outline: none;
 }
 /* fim animaçoes/efeitos */
+
+/* breakpoints */
+@media screen and (max-width:1366px) {
+    .box {
+        width: 60%;
+    }
+}
+@media screen and (max-width:1120px) {
+    .box {
+        width: 70%;
+    }
+}
+@media screen and (max-width:920px) {
+    p {
+        font-size: 1em;
+    }
+    .box {
+        width: 80%;
+        margin: 5em auto;
+    }
+}
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 1.6em;
+    }
+    .box {
+        width: 90%;
+    }
+}
+@media screen and (max-width:582px) {
+    .bt-login a {
+        font-size: 0.7em;
+    }
+    .sair a {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:520px){
+    h1 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .box {
+        margin: 3.5em auto;
+    }
+}
+@media screen and (max-width:320px) {
+    .box {
+        width: 95%;
+        margin: 1em auto;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}

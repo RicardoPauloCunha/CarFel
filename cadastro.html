@@ -25,24 +25,37 @@
                         <div class="form-tipo-user flex-container">
                             <div class="tipo-user">
                                 <img src="imagem/user.png" alt="icóne usuario" class="icon-tipe-user flex-container">
-                                Usuário
+                                <label>
+                                    <input class="form-radio" type="radio" name="usuario" checked>Usuário 
+                                </label>                               
                             </div>
                             <div class="tipo-user">
                                 <img src="imagem/Admin.png" alt="icóne admin" class="icon-tipe-user flex-container">
-                                Admin
+                                <label>
+                                    <input class="form-radio" type="radio" name="usuario">Admin
+                                </label>
                             </div>
                         </div>
-                        <p>Nome Completo:</p>
-                        <input type="text" name="nome" required class="form-input">
+                        <label>
+                            <p>Nome Completo:</p>
+                            <input type="text" name="nome" required class="form-input">
+                        </label>
         
-                        <p>Email:</p>
-                        <input type="text" name="email" required class="form-input">
+                        <label>
+                            <p>Email:</p>
+                         <input type="text" name="email" required class="form-input">
+                        </label>
         
-                        <p>Senha:</p>
-                        <input type="text" name="senha" required class="form-input">
+                        <label>
+                            <p>Senha:</p>
+                            <input type="text" name="senha" required class="form-input">
+                        </label>
         
-                        <input type="submit" name="enviar" value="Cadastrar-se" class="form-button">
+                        <input type="submit" value="Cadastrar-se" class="form-button">
                     </form>
+                    <div class="sair">
+                        <a href="index.html">Sair</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +63,7 @@
         <div class="container-lr cas">
             <div class="lr-item">
                 <p>Já possui uma conta?</p>
-                <input type="submit" name="enviar" value="Entrar" class="form-button">
+                <button class="form-button"><a href="loginn.html">Entrar</a></button>
             </div>
         </div>
     </div>
