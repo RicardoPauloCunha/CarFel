@@ -218,30 +218,36 @@ footer img{
 }
 /*fim chat*/
 /* depoimentos */
-.depoimentos{
+.depoimentos {
 	margin: 7em auto 1em auto;
 	text-align: center;
 }
-.depoimentos p{
+.depoimentos-pag {
+	margin-top: 4em;
+}
+.depoimentos p {
 	text-align: justify;
 	margin: auto 0;
 }
 .depoimentos button {
 	margin-top: 0;
 }
-.dep-img{
+.dep-img {
 	width: 12%;
 	margin-right: 0.5em;
 }
-.dh-like{
+.dep-img img{
+	width: 3em; margin-left:0.5em
+}
+.dh-like {
 	width: 5em;
 	height: 2.5em;
 	margin: auto 0 auto 0;
 }
-.dep-header{
+.dep-header {
 	justify-content: space-between;
 }
-.dep-main{
+.dep-main {
 	margin-top: 1em;
 }
 .dep-barra {
@@ -250,29 +256,35 @@ footer img{
 	background-color: rgb(65, 162, 242, 0.3);
 	margin: 0.5em 0 2em 0;
 }
-.dep-footer{
+.dep-footer {
 	justify-content: flex-end;
 }
-.dep-footer button{
-	margin: 1em auto 0.5em auto;
+.dep-footer button {
+	margin: 0.7em auto 0.5em auto;
 }
-.user-dep-escrever{
+.Usuarios-dep {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 30em;
+	padding: 0 2em;
+	margin-bottom: 0.5em;
+}
+.user-dep-escrever {
 	width: 70%;
 	margin: auto;
 }
-.dep-container-escrever{
+.dep-container-escrever {
 	width: 100%;
 }
-.dep-textarea{
-	height: 5em;
+.dep-textarea {
 	resize: none;
-	min-height: 5em;
+	min-height: 4em;
 	max-height: 8em;
-	padding: 1em 0 0 0;
 }
-.dep{
-	display: flex;
-	justify-content: flex-end;
+
+.dep-buttons{
+	justify-content: space-around;
+	margin-top: 1em;
 }
 /* fim depoimentos */
 /* fim css pagina Home */
@@ -489,7 +501,7 @@ footer img{
 	width: 100%;
 	height: 2.5em;
 	margin: 1.5em 0 0 0;
-	padding: 0.2em 0 0 0.5em;
+	padding: 0.2em 1em 0.2em 1em;
 	border-radius: 2em;
 	border: solid rgb(65, 162, 242, 0.5) 0.15em;
 }
@@ -522,6 +534,9 @@ footer img{
 	button:focus {
 		outline: none;
 	}
+	textarea{
+		outline: none;
+	}
 	.menu a:hover{
 		border-bottom: solid #e5e5e5 0.1em;
 	}
@@ -543,6 +558,9 @@ footer img{
 	}
 	.dep-textarea:focus {
 		outline: none;
+	}
+	.Usuarios-dep:hover{
+		overflow-y: scroll;
 	}
 /* fim animaçoes/efeitos */
 /*BreakPoints*/
