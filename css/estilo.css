@@ -928,6 +928,16 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.Usuarios-dep {
 		padding: 1em;
 	}
+	.flex-container-colum{
+		flex-direction: column;
+	}
+	.contato-item{
+		width: 90%;
+	}
+	.contato-item-dados{
+		width: 90%;
+		text-align: center;
+	}
 
 }
 @media screen and (max-width:580px){
@@ -1043,9 +1053,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.caracteristicas{
 		display: flex;
 	}
-	.flex-container-colum{
-		flex-direction: column;
-	}
 	.caracteristicas-item{
 		margin: 2em auto 2em auto;
 		text-align: left;
@@ -1117,13 +1124,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.preços-plano-item button{
 		font-size: 0.6em;
 		margin: 0.8em;
-	}
-	.contato-item{
-		width: 90%;
-	}
-	.contato-item-dados{
-		width: 90%;
-		text-align: center;
 	}
 	.mapa-img iframe{ 
 		height: auto;
