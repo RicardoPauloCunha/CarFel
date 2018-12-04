@@ -148,6 +148,18 @@ button{
 	text-transform: uppercase;
 	transition: 0.3s;
 }
+.button-sub{
+	border: none;
+	background-color: #4D4DFF;
+	color: #e5e5e5;
+	padding: 0.2em 0.5em 0.14em; 
+	border-radius: 3em;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.3s;
+	font-size: 1.1em;
+	margin-top: 0.1em;
+}
 .empresa-resumo{
 	text-align: center;
 }
@@ -252,7 +264,7 @@ footer img{
 	margin-bottom: 0.5em;
 }
 .user-dep-escrever {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 .dep-container-escrever {
@@ -263,7 +275,6 @@ footer img{
 	min-height: 4em;
 	max-height: 8em;
 }
-
 .dep-buttons{
 	justify-content: space-around;
 	margin-top: 1em;
