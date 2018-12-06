@@ -52,11 +52,18 @@ body{
 
 /*menu*/
 nav .nav-wrapper {
-    background-color: #4D4DFF;
+	background-color: #4D4DFF;
+	display: flex;
+    justify-content: space-between;
 }
 nav ul a {
 	color: #e5e5e5;
 	text-transform: uppercase;
+}
+.logo-img {
+	width: 2.5em;
+    margin: 0.5em 4em;
+    height: 3em;
 }
 /*fim menu*/
 
@@ -667,10 +674,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.espacamento{
 		margin-bottom: 6em;
 	}
-	.logo-img{
-		width: 30px;
-		height: auto;
-	}
 	.banner{
 		height: 236px;
 	}
@@ -774,10 +777,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	}
 	.espacamento{
 		margin-bottom: 5em;
-	}
-	.logo-img{
-		width: 30px;
-		height: auto;
 	}
 	.banner{
 		height: 184px;
@@ -970,8 +969,15 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.dep-img img{
 		width: 2.5em;
 	}
-
 }
+@media screen and (max-width:601px){
+	.logo-img {
+		width: 2em;
+		margin: 0.5em 1em;
+		height: 2.5em;
+	}
+}
+
 @media screen and (max-width:580px){
 	.Usuarios-dep {
 		padding: 0.5em;
@@ -1026,10 +1032,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	}
 	button{
 		margin: 1em;
-	}
-	.logo-img{
-		width: 25px;
-		height: auto;
 	}
 	.banner{
 		height: 131px;
@@ -1175,10 +1177,6 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	main{
 		width: 90%;
 		margin: 1.5em auto 1.5em auto;
-	}
-	.logo-img{
-		width: 1em;
-		height: auto;
 	}
 	.banner{
 		height: 106px;
