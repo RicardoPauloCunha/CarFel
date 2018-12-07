@@ -50,6 +50,12 @@ body{
 	color: rgb(124, 124, 124);
 }
 
+.time-line-center{
+	width: 10%;
+	display: flex;
+	justify-content: center;
+}
+
 /*menu*/
 nav .nav-wrapper {
 	background-color: #4D4DFF;
