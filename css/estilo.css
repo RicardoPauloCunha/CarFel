@@ -438,16 +438,18 @@ footer img{
 /* fim css pagina empresa */
 
 /* main */
-.preços h1{
+
+.precos h1{
 	font-size: 2em;
 	text-transform: unset;
 	text-align: center;
 }
-.precos-planos{
-	width: 25%
+.precos-plano {
+	width: 30%;
+	margin: 0 auto;
 }
-.preços-plano-item{
-	width: 75%;
+.precos-plano-item {
+	width: 80%;
 	height: auto;
 	padding: 0.3em;
 	background-color: rgb(65, 162, 242, 0.3);
@@ -457,21 +459,22 @@ footer img{
 	border: solid rgb(65, 162, 242, 0.5);
 	transition: 0.5em;
 }
-.preços-plano-item h2{
-	text-transform: uppercase;
-	margin-bottom: 0.3em;
+.precos-plano-item h2{
+	margin: 0.3em auto 0.3em auto;
+}
+.precos-plano-item button{
+	margin: 0.3em auto 0.6em auto;
 }
 .valor{
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #333;
-	font-weight: 800;
-	margin: 0.45em auto 0.45em auto;
-}
-.preços-vantagens-item{
-	width: 75%;
+	margin: 0.1em 0 0.1em 0;
+} 
+.precos-vantagens-item{
+	width: 80%;
 	margin: 1.5em auto 0 auto;
-}
-.preços-dados-contato-item{
+} 
+.precos-dados-contato-item{
 	margin: 0 auto 0 auto;
 }
 .perguntas h2{
@@ -479,7 +482,7 @@ footer img{
 }
 /* fim main */
 
-/* fim css pagina preços */
+/* fim css pagina precos */
 .contato-item h1{
 	font-size: 2em;
 	font-weight: 800;
@@ -578,7 +581,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 		background-color: rgb(65, 162, 242, 0.3);
 		border: solid 0.1em rgb(0, 0, 0, 0.7)
 	}
-	.preços-plano-item:hover{
+	.precos-plano-item:hover{
 		box-shadow: 0.3em 0.3em 0.2em rgb(51, 51, 51, 0.5);
 		background-color: rgba(100, 190, 255, 0.3);
 	}
@@ -641,16 +644,18 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.banner p{
 		font-size: 1em;
 	}
-
-	/*timeline*/
 	.titulo{
 		height: 4em;
 	}
 	.valor{
-		font-size: 2.2em;
-		padding: 0.7 auto 0.7 auto;
+		font-size: 1.7em;
 	}
-	/*fim timeline*/
+	.precos-plano {
+		width: 34%;
+	}
+	.precos-vantagens-item{
+		font-size: 1em;
+	}
 	.dep-img {
 		width: 7%;
 	}
@@ -707,14 +712,29 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 		height: 5em;
 	}
 	/*timeline*/
-
+	.timeline-hide {
+		display: inline-flex;
+	}
+	.timeline-show {
+		display: none;
+	}
+	.timeline-block {
+		width: 100%
+	}
+	.historico {
+		width: 80%;
+		margin: auto;
+	}
 	/*fim time line*/
 
-	.valor{
+	.precos-vantagens-item{
+		font-size: 0.9em;
+	}
+	/* .valor{
 		font-size: 2em;
 		margin-top: 0.5em;
 		margin-bottom: 0.5em;
-	}
+	} */
 	.perguntas h3{
 		font-size: 1.3em;
 	}
@@ -801,19 +821,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 		margin-bottom: 2em;
 	}
 
-	/*timeline*/
-	.timeline-hide {
-		display: inline-flex;
-	}
-	.timeline-show {
-		display: none;
-	}
-	.timeline-block {
-		width: 100%
-	}
-	/*fim time line*/
-
-	.preços h1{
+	.precos h1{
 		font-size: 1.5em;
 	}
 	.perguntas h2 {
@@ -822,21 +830,21 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.perguntas h3{
 		font-size: 1.2em;
 	}
-	.valor{
-		font-size: 1.5em;
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
+	.flex-container-p {
+		flex-direction: column;
 	}
-	.preços-plano-item p{
-		font-size: 0.8em;
+	.precos-plano {
+		width: 100%;
+		display: flex;
 	}
-	.preços-plano-item button{
-		font-size: 0.8em;
-		margin: 0.8em;
+	.precos-plano-item {
+		width: 40%;
+		margin: 0 3em 3em 4em;
 	}
-	.preços-vantagens-item p{
-		font-size: 0.85em;
-	}
+	.precos-vantagens-item{
+		width: 40%;
+		margin: 0 auto;
+	} 
 	.contato-item h1{
 		font-size: 1.4em;
 	}
@@ -861,6 +869,9 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.dep-img {
 		width: 9%;
 	}
+	.historico {
+		width: 82%;
+	}
 }
 @media screen and (max-width:650px){
 	.espacamento{
@@ -869,24 +880,8 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.flex-container-p{
 		flex-wrap: wrap;
 	}
-	.precos-plano{
-		width: 40%;
-		margin: 1em auto 1em auto;
-	}
-	.preços-plano-item{
-		width: 90%;
-		margin: auto;
-		margin-bottom: 1em;
-	}
-	.preços-vantagens-item{
-		width: 90%;
-		margin: auto;
-	}
 	.Usuarios-dep {
 		padding: 1em;
-	}
-	.flex-container-colum{
-		flex-direction: column;
 	}
 	.contato-item{
 		width: 90%;
@@ -941,8 +936,15 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.dep-img img{
 		width: 2.5em;
 	}
-
-	/* timeline */
+	.historico {
+		width: 85%;
+	}
+	.precos-plano-item {
+		width: 45%;
+	}
+	.precos-vantagens-item{
+		width: 45%;
+	}
 	
 }
 @media screen and (max-width:601px){
@@ -970,6 +972,16 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	}
 	.dep-img {
 		width: 10%;
+	}
+	.historico {
+		width: 90%;
+	}
+	.precos-plano-item {
+		width: 45%;
+		margin: 0 2em 3em 2em;
+	}
+	.precos-vantagens-item{
+		width: 45%;
 	}
 }
 @media screen and (max-width:520px){
@@ -1052,11 +1064,17 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.timeline {
 		padding: 0.5em;
 	}
-	
+	.historico {
+		width: 100%;
+	}
 	/* fim timeline */
 
-	.preços h1{
+	.precos h1{
 		font-size: 1.2em;
+	}
+	.precos-plano-item {
+		width: 50%;
+		margin: 0 1em 3em 1em;
 	}
 	.perguntas h2 {
 		margin: 1.6em 0 0 0;
@@ -1064,22 +1082,8 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.perguntas h3{
 		font-size: 1em;
 	}
-	.valor{
-		font-size: 1.5em;
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-	}
 	.flex-container-p{
 		display: flex;
-	}
-
-	.precos-plano{
-		width: 70%;
-		margin: 1em auto 0 auto;
-	}
-	.preços-plano-item button{
-		font-size: 0.6em;
-		margin: 0.8em;
 	}
 	.mapa-img iframe{ 
 		height: auto;
@@ -1165,15 +1169,14 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 		height: 25px;
 		left: -9px;
 	}	
-	.preços{
-		margin-top: 1em;
-	}
-	.preços h1 {
+	.precos h1 {
     font-size: 1em;
 	}
-	.preços-vantagens {
-    width: 45%;
+	.precos-plano-item {
+		width: 50%;
+		margin: 0 1em 3em 0;
 	}
+
 	.mapa-img{
 		margin: 2em auto 0.5em auto;
 	}
@@ -1216,7 +1219,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 	.empresa-item img{
 		margin-bottom: 1em;
 	}
-	.preços-dados-contato{
+	.precos-dados-contato{
 		flex-direction: column;
 	}
 	footer ul{
