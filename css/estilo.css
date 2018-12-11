@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
+:-ms-input-placeholder {
+	color: #666666;
+}
 h1{
 	font-size: 2.2em;
 	font-weight: 1000;
