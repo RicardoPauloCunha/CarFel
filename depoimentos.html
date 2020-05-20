@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link type="text/css" rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>CarFel - CheckPoint</title>
 </head>
+
 <body>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
 	<header>
 		<nav>
 			<div class="nav-wrapper">
@@ -21,9 +24,9 @@
 					<i class="material-icons">menu</i>
 				</a>
 				<script>
-				$(function(){
-					$(".button-collapse").sideNav();
-				});
+					$(function () {
+						$(".button-collapse").sideNav();
+					});
 				</script>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="index.html">Home</a></li>
@@ -33,7 +36,7 @@
 					<li><a href="Loginn.html">Login</a></li>
 					<li><a href="Cadastro.html">Cadastrar-se</a></li>
 				</ul>
-				
+
 				<ul class="class side-nav" id="menu-mobile">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="empresa.html">Sobre Nós</a></li>
@@ -47,16 +50,16 @@
 	</header>
 
 	<div class="titulo">
-        <div class="titulo-item">
-            <h2>Depoimentos</h2>
-        </div>
+		<div class="titulo-item">
+			<h2>Depoimentos</h2>
+		</div>
 	</div>
-	
+
 	<main>
 		<div class="user-dep-escrever">
 			<div class="flex-container">
 				<div class="dep-img flex-container" style="justify-content: flex-end;">
-					<img src="imagem/user.png" alt="icone de usuario" style="height: 3em;">		
+					<img src="imagem/user.png" alt="icone de usuario" style="height: 3em;">
 				</div>
 				<div class="dep-container-escrever">
 					<div class="dep-header flex-container">
@@ -64,58 +67,67 @@
 							<p><b>User Logado</b></p>
 						</div>
 					</div>
-					<textarea placeholder="Deixe seu depoimento:" class="contato-item-form-input dep-textarea"></textarea>
+					<textarea placeholder="Deixe seu depoimento:"
+						class="contato-item-form-input dep-textarea"></textarea>
 				</div>
-			</div>	
+			</div>
 		</div>
-		
-        <section class="depoimentos depoimentos-pag">
+
+		<section class="depoimentos depoimentos-pag">
 			<h2>Depoimentos</h2>
-				<div class="Usuarios-dep">
-					<div class="user-dep">
-						<div class="flex-container">
-							<div class="dep-img">
-								<img src="imagem/user.png" alt="icone de usuario">		
+			<div class="Usuarios-dep">
+				<div class="user-dep">
+					<div class="flex-container">
+						<div class="dep-img">
+							<img src="imagem/user.png" alt="icone de usuario">
+						</div>
+						<div class="dep-container">
+							<div class="dep-header flex-container">
+								<div class="dh-text">
+									<p><b>User</b></p>
+									<p>28/11/2018</p>
+								</div>
+								<div class="dh-like flex-container">
+									<img src="imagem/like.png" alt="icone de like"
+										style="width:2.5em; height: auto; margin-right: 0.5em;">
+									<p>100</p>
+								</div>
 							</div>
-							<div class="dep-container">
-								<div class="dep-header flex-container">
-									<div class="dh-text">
-										<p><b>User</b></p>
-										<p>28/11/2018</p>
-									</div>
-									<div class="dh-like flex-container">
-										<img src="imagem/like.png" alt="icone de like" style="width:2.5em; height: auto; margin-right: 0.5em;">
-										<p>100</p>
-									</div>
-								</div>
-								<div class="dep-main">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-								</div>
+							<div class="dep-main">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+									euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+									minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+									aliquip</p>
 							</div>
 						</div>
-						<div class="dep-barra"></div>
 					</div>
-		
-					<div class="user-dep">
-							<div class="flex-container">
-								<div class="dep-img">
-									<img src="imagem/user.png" alt="icone de usuario">		
+					<div class="dep-barra"></div>
+				</div>
+
+				<div class="user-dep">
+					<div class="flex-container">
+						<div class="dep-img">
+							<img src="imagem/user.png" alt="icone de usuario">
+						</div>
+						<div class="dep-container">
+							<div class="dep-header flex-container">
+								<div class="dh-text">
+									<p><b>User</b></p>
+									<p>28/11/2018</p>
 								</div>
-								<div class="dep-container">
-									<div class="dep-header flex-container">
-										<div class="dh-text">
-											<p><b>User</b></p>
-											<p>28/11/2018</p>
-										</div>
-										<div class="dh-like flex-container">
-											<img src="imagem/like.png" alt="icone de like" style="width:2.5em; height: auto; margin-right: 0.5em;">
-											<p>100</p>
-										</div>
-									</div>
-									<div class="dep-main">
-										<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-									</div>
-									<!-- Adim 
+								<div class="dh-like flex-container">
+									<img src="imagem/like.png" alt="icone de like"
+										style="width:2.5em; height: auto; margin-right: 0.5em;">
+									<p>100</p>
+								</div>
+							</div>
+							<div class="dep-main">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+									euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+									minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+									aliquip</p>
+							</div>
+							<!-- Adim 
 									<div class="dep-footer flex-container">
 										<div class="df-aprovado">
 											<button style="margin-right: 0.5em">Aprovado</button>
@@ -124,89 +136,97 @@
 											<button>Reprovado</button>
 										</div>
 									</div> -->
-								</div>
-							</div>
-							<div class="dep-barra"></div>
-					</div>
-		
-					<div class="user-dep">
-						<div class="flex-container">
-							<div class="dep-img">
-								<img src="imagem/user.png" alt="icone de usuario">		
-							</div>
-							<div class="dep-container">
-								<div class="dep-header flex-container">
-									<div class="dh-text">
-										<p><b>User</b></p>
-										<p>28/11/2018</p>
-									</div>
-									<div class="dh-like flex-container">
-										<img src="imagem/like.png" alt="icone de like" style="width:2.5em; height: auto; margin-right: 0.5em;">
-										<p>100</p>
-									</div>
-								</div>
-								<div class="dep-main">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-								</div>
-								<!-- Adim 
-								<div class="dep-footer flex-container">
-									<div class="df-aprovado">
-										<button style="margin-right: 0.5em">Aprovado</button>
-									</div>
-									<div class="df-reprovado">
-										<button>Reprovado</button>
-									</div>
-								</div> -->
-							</div>
 						</div>
-						<div class="dep-barra"></div>
 					</div>
-		
-					<div class="user-dep">
-						<div class="flex-container">
-							<div class="dep-img">
-								<img src="imagem/user.png" alt="icone de usuario">		
-							</div>
-							<div class="dep-container">
-								<div class="dep-header flex-container">
-									<div class="dh-text">
-										<p><b>User</b></p>
-										<p>28/11/2018</p>
-									</div>
-									<div class="dh-like flex-container">
-										<img src="imagem/like.png" alt="icone de like" style="width:2.5em; height: auto; margin-right: 0.5em;">
-										<p>100</p>
-									</div>
-								</div>
-								<div class="dep-main">
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-								</div>
-								<!-- Adim 
-								<div class="dep-footer flex-container">
-									<div class="df-aprovado">
-										<button style="margin-right: 0.5em">Aprovado</button>
-									</div>
-									<div class="df-reprovado">
-										<button>Reprovado</button>
-									</div>
-								</div> -->
-							</div>
-						</div>
-						<div class="dep-barra"></div>
-					</div>
+					<div class="dep-barra"></div>
 				</div>
-			
+
+				<div class="user-dep">
+					<div class="flex-container">
+						<div class="dep-img">
+							<img src="imagem/user.png" alt="icone de usuario">
+						</div>
+						<div class="dep-container">
+							<div class="dep-header flex-container">
+								<div class="dh-text">
+									<p><b>User</b></p>
+									<p>28/11/2018</p>
+								</div>
+								<div class="dh-like flex-container">
+									<img src="imagem/like.png" alt="icone de like"
+										style="width:2.5em; height: auto; margin-right: 0.5em;">
+									<p>100</p>
+								</div>
+							</div>
+							<div class="dep-main">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+									euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+									minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+									aliquip</p>
+							</div>
+							<!-- Adim 
+								<div class="dep-footer flex-container">
+									<div class="df-aprovado">
+										<button style="margin-right: 0.5em">Aprovado</button>
+									</div>
+									<div class="df-reprovado">
+										<button>Reprovado</button>
+									</div>
+								</div> -->
+						</div>
+					</div>
+					<div class="dep-barra"></div>
+				</div>
+
+				<div class="user-dep">
+					<div class="flex-container">
+						<div class="dep-img">
+							<img src="imagem/user.png" alt="icone de usuario">
+						</div>
+						<div class="dep-container">
+							<div class="dep-header flex-container">
+								<div class="dh-text">
+									<p><b>User</b></p>
+									<p>28/11/2018</p>
+								</div>
+								<div class="dh-like flex-container">
+									<img src="imagem/like.png" alt="icone de like"
+										style="width:2.5em; height: auto; margin-right: 0.5em;">
+									<p>100</p>
+								</div>
+							</div>
+							<div class="dep-main">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+									euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+									minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+									aliquip</p>
+							</div>
+							<!-- Adim 
+								<div class="dep-footer flex-container">
+									<div class="df-aprovado">
+										<button style="margin-right: 0.5em">Aprovado</button>
+									</div>
+									<div class="df-reprovado">
+										<button>Reprovado</button>
+									</div>
+								</div> -->
+						</div>
+					</div>
+					<div class="dep-barra"></div>
+				</div>
+			</div>
+
 			<div class="dep-buttons flex-container">
 				<button><a href="index.html">Voltar para a Home</a></button>
 				<!-- adimn 
 				<button><a href="depoimentos.html">Avaliar</a></button> -->
-			</div>	
+			</div>
 		</section>
 
-    </main>
-	
+	</main>
+
 	<footer class="flex-container">
-    	<ul>
+		<ul>
 			<a href="index.html">
 				<li class="footer-item">Home</li>
 				<li>CheckPoint</li>
@@ -214,8 +234,8 @@
 				<li>Suporte</li>
 				<li>Chat</li>
 			</a>
-        </ul>
-        <ul>
+		</ul>
+		<ul>
 			<a href="empresa.html">
 				<li class="footer-item">Institucional</li>
 				<li>Sobre Nós</li>
@@ -223,8 +243,8 @@
 				<li>Outros produtos</li>
 				<li>Colaboradores</li>
 			</a>
-        </ul>
-        <ul>
+		</ul>
+		<ul>
 			<a href="contato.html">
 				<li class="footer-item"> Contato</li>
 				<li>(XX) XXXXX-XXXX</li>
@@ -232,11 +252,12 @@
 				<li>Alameda Barão de Limeira, 539 </li>
 				<li>Santa Cecilia</li>
 			</a>
-        </ul>
-        <ul>
-            <li class="footer-item">Siga-nós</li>
-            <img src="imagem/redessociais.png" alt="Icones das redes sociais." width="170" height="170">
-        </ul>
-    </footer>
+		</ul>
+		<ul>
+			<li class="footer-item">Siga-nós</li>
+			<img src="imagem/redessociais.png" alt="Icones das redes sociais." width="170" height="170">
+		</ul>
+	</footer>
 </body>
+
 </html>
